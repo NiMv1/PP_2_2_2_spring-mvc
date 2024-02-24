@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Cars Page</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Make</th>
+        <th>Model</th>
+        <th>Year</th>
+    </tr>
+    <tr th:each="car : ${cars}">
+        <td th:text="${car.make}">Toyota</td>
+        <td th:text="${car.model}">Corolla</td>
+        <td th:text="${car.year}">2020</td>
+    </tr>
+</table>
+</body>
+</html>
